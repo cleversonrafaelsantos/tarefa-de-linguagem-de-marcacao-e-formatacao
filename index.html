@@ -26,15 +26,22 @@
       position: absolute;
       top: 10px;
       right: 10px;
-      display: flex;
-      gap: 5px;
     }
 
-    .menu button {
+    .menu ul {
+      display: flex;
+      gap: 5px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu a {
+      display: inline-block;
       padding: 5px 10px;
       font-size: 12px;
+      text-decoration: none;
       cursor: pointer;
-      border: none;
       background: rgba(0, 0, 0, 0.6);
       color: white;
       border-radius: 4px;
@@ -47,11 +54,13 @@
   <div class="container">
     <img id="imagem" src="img/paisagem.png" alt="Imagem">
 
-    <div class="menu">
-      <button>Home</button>
-      <button>Sobre</button>
-      <button>Contato</button>
-    </div>
+    <nav class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
   </div>
 
   <p id="largura"></p>
